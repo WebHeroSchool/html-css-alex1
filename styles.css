@@ -1,0 +1,70 @@
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ .logo {
+  padding: 40px 0;
+  font-family: PT Serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item{
+  padding: 0 13px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.menu__item_active {
+  border-bottom: blue;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content {
+  height: 41%;
+}
+
+.main-content__title {
+  font-family: PT Serif;
+}
+
+.main-content__subtitle {
+}
+
+.main-content__button {
+  font-family: Roboto;
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content__photo {
+}
+
+/*{
+    border: dashed 1px red;
+}
