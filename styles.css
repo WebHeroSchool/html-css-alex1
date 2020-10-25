@@ -29,6 +29,7 @@ body {
    width: 28px;
    height: 28px;
    border-radius: 50%;
+   opacity: .7;
  }
 
  .logo__circle_color_dark-blue {
@@ -39,7 +40,6 @@ body {
    background: #C8DBFB;
    left: 8px;
    top: 56%;
-   opacity: .7;
  }
 
 .menu {
