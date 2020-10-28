@@ -47,16 +47,47 @@ body {
   align-items: center;
 }
 
-.menu__item{
-  padding: 0 13px;
+.menu__item {
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px robotobold, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .5s;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
-.menu__item_active {
-  border-bottom: blue;
+.menu__item:hover:after, .menu__item_active:after {
+  opacity: 1;
+  width: 100%;
+}
+
+.menu__item:hover {
+  color: #0056EC;
+  opacity: .5;
+}
+
+.menu__item:hover:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background: #0056EC;
+}
+
+.menu__item_active:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background: #0056EC;
 }
 
 .main-section {
