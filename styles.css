@@ -12,6 +12,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
  .logo {
@@ -106,35 +107,36 @@ body {
   opacity: 1;
 }
 
-.main-section {
-  display: flex;
-  justify-content: space-between;
+.main {
+  padding: 0 63% 100px 0;
+  background: top right no-repeat url(img/image.svg);
 }
 
-.main-content {
-  height: 41%;
+.main__title {
+  margin: 0 0 40px 0;
+  font: 700 50px/65px pt_serifbold, arial, helvetica, sans-serif;
 }
 
-.main-content__title {
-  font-family: PT Serif;
+.main__title-text_highlight {
+  background: #ECF3FF;
 }
 
-.main-content__subtitle {
+.main__subtitle {
+  margin: 0 0 40px 0;
+  font: 18px/21px robotomedium, arial, helvetica, sans-serif;
 }
 
-.main-content__button {
-  font-family: Roboto;
+.main__button {
+  display: inline-block;
+  font: 14px/16px robotoregular, arial, helvetica, sans-serif;
+  padding: 14px 16px;
+  background: #0056EC;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
 }
 
-.image-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-content__photo {
-}
-
-/*{
-    border: dashed 1px red;
+.main__button:hover {
+  opacity: .5;
 }
