@@ -12,7 +12,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin-bottom: 135px;
 }
 
  .logo {
@@ -114,6 +114,7 @@ body {
 
 .main__title {
   margin: 0 0 40px 0;
+  padding-top: 70px;
   font: 700 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
 
@@ -129,7 +130,7 @@ body {
 .main__button {
   display: inline-block;
   font: 18px/21px robotoregular, arial, helvetica, sans-serif;
-  padding: 18px 25px;
+  padding: 18px 30px;
   background: #0056EC;
   color: #FFF;
   text-decoration: none;
@@ -143,11 +144,15 @@ body {
 
 @media (max-width: 1367px) and (min-width: 769px) {
   .wrapper {
-    width: 90%;
+    width: 68%;
   }
 
   .header {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+  }
+
+  .menu {
+    padding-top: 10px;
   }
 
   .menu__item {
@@ -157,7 +162,12 @@ body {
     transition: opacity .5s;
   }
 
+  .menu__item:last-child {
+    margin-right: 5px;
+  }
+
   .main__title {
+    padding-top: 10px;
     font: 700 50px/66px pt_serifbold, arial, helvetica, sans-serif;
   }
 
@@ -167,7 +177,7 @@ body {
 
   .main__button {
     font: 14px/16px robotoregular, arial, helvetica, sans-serif;
-    padding: 14px 25px;
+    padding: 14px 22px;
   }
 
   .main {
@@ -175,6 +185,16 @@ body {
     background-size: 55%;
   }
 
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .wrapper {
+    width: 91%;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 769px) {
@@ -186,16 +206,20 @@ body {
 @media (max-width: 768px) and (min-width: 0) {
 
   .wrapper {
-    width: 95%;
+    width: 92%;
+  }
+
+  .header {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .logo {
+    padding-top: 38px;
   }
 
   .menu, .logo__title  {
     display: none;
-  }
-
-  .header {
-    margin-bottom: 15px;
-    padding-left: 10px;
   }
 
   #menu__toggle {
@@ -206,7 +230,7 @@ body {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 32px;
+    top: 28px;
     right: 24px;
     width: 26px;
     height: 26px;
@@ -284,26 +308,29 @@ body {
   .main {
     text-align: center;
     padding: 74% 0 0;
-    background-size: 74%;
+    background-size: 80%;
     background-position: top center;
   }
 
   .main__title {
-    margin-bottom: 35px;
+    margin: -67px 0 31px 0;
+    padding-left: 3px;
     font: 30px/40px pt_serifbold, arial, helvetica, sans-serif;
   }
+
   .main__subtitle {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     font: 500 16px/19px robotomedium, arial, helvetica, sans-serif;
-    padding: 0 40px;
+    padding: 0 45px;
+  }
+
+  .main__subtitle br {
+    display: none;
   }
 
   .main__button {
     font: 14px/16px robotoregular, arial, helvetica, sans-serif;
-    padding: 14px 25px;
+    padding: 15px 20px;
   }
 
-  .main__title {
-      margin: -10px 0 30px 0;
-  }
 }
